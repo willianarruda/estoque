@@ -21,6 +21,7 @@ Public Class frmLogin
             cboUsuario.ValueMember = "Id"
             cboUsuario.DisplayMember = "Usuario"
         Catch ex As Exception
+            GerarLogErro(ex)
             informa(ex.ToString)
         End Try
     End Sub

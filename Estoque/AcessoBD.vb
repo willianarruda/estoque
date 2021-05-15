@@ -5,7 +5,7 @@ Public Class AcessoBD
 
     Private Shared Function GetDbConnection() As SqlConnection
         Try
-            Dim conString As String = "" 'ConfigurationManager.ConnectionStrings("conexaoNorthwind").ConnectionString
+            Dim conString As String = ConfigurationManager.ConnectionStrings("conexaoNorthwind").ConnectionString
             Dim connection As SqlConnection = New SqlConnection(conString)
             connection.Open()
             Return connection

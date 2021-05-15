@@ -25,45 +25,57 @@ Partial Class frmNorthwind
         Me.cboCategorias = New System.Windows.Forms.ComboBox()
         Me.lbProdutos = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'cboCategorias
         '
         Me.cboCategorias.FormattingEnabled = True
-        Me.cboCategorias.Location = New System.Drawing.Point(56, 61)
+        Me.cboCategorias.Location = New System.Drawing.Point(12, 55)
         Me.cboCategorias.Name = "cboCategorias"
-        Me.cboCategorias.Size = New System.Drawing.Size(268, 21)
+        Me.cboCategorias.Size = New System.Drawing.Size(469, 21)
         Me.cboCategorias.TabIndex = 0
         '
         'lbProdutos
         '
         Me.lbProdutos.FormattingEnabled = True
-        Me.lbProdutos.Location = New System.Drawing.Point(56, 88)
+        Me.lbProdutos.Location = New System.Drawing.Point(12, 82)
         Me.lbProdutos.Name = "lbProdutos"
-        Me.lbProdutos.Size = New System.Drawing.Size(268, 147)
+        Me.lbProdutos.Size = New System.Drawing.Size(469, 147)
         Me.lbProdutos.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(56, 241)
+        Me.Button1.Location = New System.Drawing.Point(12, 235)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(268, 36)
+        Me.Button1.Size = New System.Drawing.Size(469, 36)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Preencher"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'DataGridView1
+        '
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 277)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(469, 150)
+        Me.DataGridView1.TabIndex = 3
         '
         'frmNorthwind
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.SeaGreen
-        Me.ClientSize = New System.Drawing.Size(412, 372)
+        Me.ClientSize = New System.Drawing.Size(515, 470)
+        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.lbProdutos)
         Me.Controls.Add(Me.cboCategorias)
         Me.Name = "frmNorthwind"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmNorthwin"
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -71,4 +83,5 @@ Partial Class frmNorthwind
     Friend WithEvents cboCategorias As ComboBox
     Friend WithEvents lbProdutos As ListBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents DataGridView1 As DataGridView
 End Class
