@@ -5,6 +5,8 @@ Public Class frmLogin
     Dim oLogin As TConexaoMysql
 
     Private Sub Login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        mostraIP()
+
         oLogin = New TConexaoMysql()
         oLogin.Server = "31.170.167.15"
         oLogin.Server = "sql486.main-hosting.eu"
@@ -57,5 +59,13 @@ Public Class frmLogin
 
     Private Sub cboUsuario_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cboUsuario.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub mostraIP()
+        Dim listaIpLocal As System.Net.IPAddress() = System.Net.Dns.GetHostAddresses(System.Net.Dns.GetHostName())
+        ListBox1.Items.Clear()
+        For Each ip As System.Net.IPAddress In listaIpLocal
+            ListBox1.Items.Add(ip.ToString())
+        Next
     End Sub
 End Class
