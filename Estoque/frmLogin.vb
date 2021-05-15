@@ -34,7 +34,7 @@ Public Class frmLogin
     Public Function ValidarSenha() As Boolean
         If cboUsuario.Text = String.Empty Or TB_senha.Text = String.Empty Then
             ToolStripStatusLabel1.Text = "Erro: Usuário ou senha inválido."
-            TB_usuario.Focus()
+            cboUsuario.Focus()
             Return False
         End If
 

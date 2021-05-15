@@ -26,7 +26,6 @@ Partial Class frmLogin
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TB_usuario = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.cboUsuario = New System.Windows.Forms.ComboBox()
         Me.BTN_login = New System.Windows.Forms.Button()
@@ -60,15 +59,6 @@ Partial Class frmLogin
         Me.Label2.Size = New System.Drawing.Size(41, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Senha:"
-        '
-        'TB_usuario
-        '
-        Me.TB_usuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.TB_usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TB_usuario.Location = New System.Drawing.Point(466, 27)
-        Me.TB_usuario.Name = "TB_usuario"
-        Me.TB_usuario.Size = New System.Drawing.Size(189, 20)
-        Me.TB_usuario.TabIndex = 0
         '
         'GroupBox1
         '
@@ -117,10 +107,10 @@ Partial Class frmLogin
         '
         Me.StatusStrip1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.StatusStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripStatusLabel1, Me.ToolStripStatusLabel2})
-        Me.StatusStrip1.Location = New System.Drawing.Point(0, 375)
+        Me.StatusStrip1.Location = New System.Drawing.Point(0, 211)
         Me.StatusStrip1.Name = "StatusStrip1"
         Me.StatusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.StatusStrip1.Size = New System.Drawing.Size(699, 22)
+        Me.StatusStrip1.Size = New System.Drawing.Size(459, 22)
         Me.StatusStrip1.TabIndex = 5
         Me.StatusStrip1.Text = "StatusStrip1"
         '
@@ -155,11 +145,10 @@ Partial Class frmLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(699, 397)
+        Me.ClientSize = New System.Drawing.Size(459, 233)
         Me.Controls.Add(Me.LogoPictureBox)
         Me.Controls.Add(Me.StatusStrip1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.TB_usuario)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Name = "frmLogin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -175,7 +164,6 @@ Partial Class frmLogin
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TB_usuario As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents TB_senha As System.Windows.Forms.TextBox
     Friend WithEvents BTN_login As System.Windows.Forms.Button
